@@ -64,7 +64,7 @@
     <form id="myForm">
       <div class="form-group">
         <label for="numero"><strong>Ingrese su código de acceso:</strong>
-            <br/><span class="help">Para acceder a entorno general de pruetas use "4", para rendir el examen de certificación utilice el código que le han compartido</span>
+            <br/><span class="help">Para acceder a entorno general de pruebas use "4", para rendir el examen de certificación utilice el código que le han compartid o su número de cédula.</span>
         </label>
         <input type="number" id="numero" name="numero" required>
       </div>
@@ -79,6 +79,9 @@
       event.preventDefault(); // Evita el envío del formulario por defecto
       
       var numero = document.getElementById("numero").value;
+      if (numero == "0951633569" || numero == "951633569")
+        numero = 10
+
       var url = "http://creamcoffeedemo.odoo.com/pos/web?config_id=" + encodeURIComponent(numero);
       window.location.href = url;
     });
