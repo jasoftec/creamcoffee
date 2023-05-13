@@ -42,15 +42,29 @@
       border-radius: 3px;
       cursor: pointer;
     }
+    .help {
+        font-weight: normal;
+        font-size: 0.8em;
+        color: gray;
+    }
+    .logo {
+        margin: auto;
+        text-align: center;
+        width: 50%;
+    }
   </style>
 </head>
 <body>
+    <div class="logo">
+        <img src="https://creamcoffee.odoo.com/web/image/website/1/logo/CreamCoffee%20Oficial?unique=a437c26" alt="Logo Creamcoffee"/>
+        <h1>Entorno de Formación en Punto de Venta</h1>
+    </div>
   <div class="container">
-    <p>Acceso a Punto de Venta CreamCofffee</p>
+    <p>Acceso a Punto de Venta</p>
     <form id="myForm">
       <div class="form-group">
         <label for="numero"><strong>Ingrese su código de acceso:</strong>
-            <br/><span>Para acceder a entorno general de pruetas use "4", para rendir el examen de certificación utilice el código que le han compartido</span>
+            <br/><span class="help">Para acceder a entorno general de pruetas use "4", para rendir el examen de certificación utilice el código que le han compartido</span>
         </label>
         <input type="number" id="numero" name="numero" required>
       </div>
