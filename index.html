@@ -81,8 +81,22 @@
       var numero = document.getElementById("numero").value;
       if (numero == "0951633569" || numero == "951633569")
         numero = 10
+      if (numero == "0930218961" || numero == "930218961")
+        numero = 11
+      if (numero == "0922778881" || numero == "922778881")
+        numero = 12
+      if (numero == "0943904805" || numero == "943904805")
+        numero = 13
+      if (numero == "0957347883" || numero == "957347883")
+        numero = 14
+      if (numero == "0955141064" || numero == "955141064")
+        numero = 15
 
       var url = "http://creamcoffeedemo.odoo.com/pos/web?config_id=" + encodeURIComponent(numero);
+
+      if (numero < 10 && numero != 4)
+        url = "https://jasoftec.github.io/creamcoffee/";
+      
       window.location.href = url;
     });
   </script>
